@@ -1,7 +1,7 @@
 # title
   
   ## Description
-  fdsfs
+  description
 
   ## Table of Contents
   * [Installation](#installation)
@@ -24,11 +24,12 @@
 
   
   ## Usage
-  fdas
+  user
 
   ## Contributors
   
-    fdsfsafsd, fdssfda, fdsafdsa
+    undefined
+    
 
   ## Test
   The following command is used to test this project:
