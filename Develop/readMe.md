@@ -1,7 +1,10 @@
 # title
   
+  * MIT
+
+  
   ## Description
-  description
+  descriptiuon
 
   ## Table of Contents
   * [Installation](#installation)
@@ -18,18 +21,13 @@
   ```
 
   ## License
-  
-  * MIT
-
-
+  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
   
   ## Usage
   user
 
   ## Contributors
-  
-    undefined
-    
+  undefined
 
   ## Test
   The following command is used to test this project:
@@ -39,5 +37,5 @@
   ```
 
   ## Contact
-    To see more of my projects view my github at [username](https://github.com/username)
-    If you have any questions you can contact me at email
+  To see more of my projects view my github at [usernaem](https://github.com/usernaem)
+  If you have any questions you can contact me at email

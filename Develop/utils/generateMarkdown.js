@@ -11,7 +11,12 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-
+  if (license !== 'None') {
+    return (
+      `\n  * [License](#license)\n`
+    )
+  }
+  return ''
 }
 
 // TODO: Create a function that returns the license section of README
@@ -22,24 +27,21 @@ function renderLicenseSection(license) {
 
 const generateCollaborators = collaboratorNames => {
   if (!collaboratorNames) {
-  return ''
+  return 'None'
   } else {
-    let newNames = collaboratorNames.split(',')
-    let finalNames = newNames.forEach(name => {
-      console.log(name)
-      return `
-      \n${name}
-      `
-    })
+    let newNames = collaboratorNames.split(', ')
+    console.log(newNames)
+    for(i=0; i<collaboratorNames.length; i++)
+    var finalNames = newNames[i]
     console.log(finalNames)
-    return `
-    ${finalNames}
-    `
+    return`${finalNames}`
   }
+  // return `${finalNames}`
 }
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+  ${renderLicenseSection(data.license)}
   
   ## Description
   ${data.description}
@@ -59,8 +61,7 @@ function generateMarkdown(data) {
   \`\`\`
 
   ## License
-  ${renderLicenseSection(data.license)}
-
+  ${renderLicenseBadge(data.license)}
   
   ## Usage
   ${data.usage}
@@ -76,8 +77,8 @@ function generateMarkdown(data) {
   \`\`\`
 
   ## Contact
-    To see more of my projects view my github at [${data.githubUsername}](https://github.com/${data.githubUsername})
-    If you have any questions you can contact me at ${data.email}
+  To see more of my projects view my github at [${data.githubUsername}](https://github.com/${data.githubUsername})
+  If you have any questions you can contact me at ${data.email}
 `
 }
 
