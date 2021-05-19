@@ -25,18 +25,12 @@ function renderLicenseSection(license) {
     return `\n  * ${license}\n`
 }
 
-const generateCollaborators = collaboratorNames => {
-  if (!collaboratorNames) {
+const generateCollaborators = collaboratorInfo => {
+  if (!collaboratorInfo) {
   return 'None'
   } else {
-    let newNames = collaboratorNames.split(', ')
-    console.log(newNames)
-    for(i=0; i<collaboratorNames.length; i++)
-    var finalNames = newNames[i]
-    console.log(finalNames)
-    return`${finalNames}`
-  }
-  // return `${finalNames}`
+    return collaboratorInfo
+}
 }
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -66,8 +60,8 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## Contributors
-  ${generateCollaborators(data.collaboratorNames)}
+  ## Collaboration
+  ${generateCollaborators(data.collaboratorInfo)}
 
   ## Test
   The following command is used to test this project:

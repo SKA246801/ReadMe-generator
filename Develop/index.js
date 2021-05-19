@@ -82,13 +82,13 @@ const questions = [
     {
         type: 'confirm',
         name: 'confirmCollaborators',
-        message: 'Would you like to add any collaborators?',
+        message: 'Would you like to add any collaborator information?',
         default: false,
     },
     {
         type: 'input',
-        name: 'collaboratorNames',
-        message: 'Enter the name of the collaborators (separate them using a comma)',
+        name: 'collaboratorInfo',
+        message: 'Enter any information you would like to add about collaboratoration in this project',
         when: ({ confirmCollaborators }) => confirmCollaborators
     },
    {

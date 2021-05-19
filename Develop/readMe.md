@@ -4,7 +4,7 @@
 
   
   ## Description
-  descriptiuon
+  descrtiption
 
   ## Table of Contents
   * [Installation](#installation)
@@ -26,8 +26,8 @@
   ## Usage
   user
 
-  ## Contributors
-  undefined
+  ## Collaboration
+  fadsfdsafdsafsa
 
   ## Test
   The following command is used to test this project:
