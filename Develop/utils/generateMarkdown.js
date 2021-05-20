@@ -35,15 +35,13 @@ const generateCollaborators = collaboratorInfo => {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ${renderLicenseSection(data.license)}
-  
   ## Description
   ${data.description}
 
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributing](#contributing)
+  * [Collaboration](#Collaboration)
   * [Test](#test)
   * [Contact](#contact)
 
